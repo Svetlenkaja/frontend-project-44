@@ -11,7 +11,7 @@ const buildProgression = () => {
   const first = getRandomNumber(minOne, max);
   subsequence.push(first);
   let last = first;
-  for (let i = 0; i < max; i += 1) {
+  for (let i = 1; i < max; i += 1) {
     last += step;
     subsequence.push(last);
   }
