@@ -1,5 +1,5 @@
 import {
-  game, getRandomNumber, max, attempts,
+  game, getRandomNumber, minZero, maxNumber, attempts,
 } from '../index.js';
 
 const condition = 'What is the result of the expression?';
@@ -22,9 +22,9 @@ const calculate = (num1, num2, oper) => {
 const gameRule = () => {
   const rule = [];
   for (let i = 0; i < attempts; i += 1) {
-    const numberOne = getRandomNumber(max);
-    const numberTwo = getRandomNumber(max);
-    const operation = operations[getRandomNumber(operations.length)];
+    const numberOne = getRandomNumber(minZero, maxNumber);
+    const numberTwo = getRandomNumber(minZero, maxNumber);
+    const operation = operations[getRandomNumber(minZero, operations.length)];
     const question = `${numberOne} ${operation} ${numberTwo}`;
     const answer = calculate(numberOne, numberTwo, operation);
     rule.push([question, answer.toString()]);

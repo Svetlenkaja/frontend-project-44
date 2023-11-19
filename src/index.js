@@ -1,7 +1,10 @@
 import readlineSync from 'readline-sync';
 
 export const attempts = 3;
-export const max = 100;
+
+export const minZero = 0;
+export const minOne = 1;
+export const maxNumber = 100;
 
 const correctAnswer = 'Correct!';
 const inCorrectAnswer = "Let's try again, ";
@@ -13,7 +16,7 @@ const greeting = () => {
   return userAnswer;
 };
 
-export const getRandomNumber = (limit) => Math.floor(Math.random() * limit);
+export const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 const askQuestion = (question) => {
   console.log(`Questions: ${question}`);

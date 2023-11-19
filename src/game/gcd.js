@@ -1,5 +1,5 @@
 import {
-  game, getRandomNumber, max, attempts,
+  game, getRandomNumber, minOne, maxNumber, attempts,
 } from '../index.js';
 
 const condition = 'Find the greatest common divisor of given numbers.';
@@ -13,8 +13,8 @@ const findGcd = (a, b) => {
 const gameRule = () => {
   const rule = [];
   for (let i = 0; i < attempts; i += 1) {
-    const a = getRandomNumber(max);
-    const b = getRandomNumber(max);
+    const a = getRandomNumber(minOne, maxNumber);
+    const b = getRandomNumber(minOne, maxNumber);
     const question = `${a} ${b}`;
     const answer = findGcd(a, b);
     rule.push([question, answer.toString()]);
