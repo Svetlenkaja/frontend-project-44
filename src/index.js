@@ -19,7 +19,7 @@ const greeting = () => {
 export const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 const askQuestion = (question) => {
-  console.log(`Questions: ${question}`);
+  console.log(`Question: ${question}`);
   return readlineSync.question('Your answer: ');
 };
 
