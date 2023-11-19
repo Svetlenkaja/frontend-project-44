@@ -23,7 +23,7 @@ const buildQuestion = (arr, missing) => {
   for (let i = 0; i < arr.length; i += 1) {
     result = (i === missing) ? `${result} ..` : `${result} ${arr[i]}`;
   }
-  return result;
+  return result.trim();
 };
 
 const gameRule = () => {
