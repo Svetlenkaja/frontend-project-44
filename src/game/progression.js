@@ -1,6 +1,10 @@
 import {
-  game, getRandomNumber, minZero, minOne, attempts,
+  play, attempts,
 } from '../index.js';
+
+import {
+  getRandomNumber, minZero, minOne,
+} from '../util.js';
 
 const condition = 'What number is missing in the progression?';
 const max = 10;
@@ -26,7 +30,7 @@ const buildQuestion = (arr, missing) => {
   return result.trim();
 };
 
-const gameRule = () => {
+const setRulesOfGame = () => {
   const rule = [];
   for (let i = 0; i < attempts; i += 1) {
     const missing = getRandomNumber(minZero, max);
@@ -39,8 +43,6 @@ const gameRule = () => {
   return rule;
 };
 
-const progression = () => {
-  game(condition, gameRule());
+export default () => {
+  play(condition, setRulesOfGame());
 };
-
-export default progression;

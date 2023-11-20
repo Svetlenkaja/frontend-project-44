@@ -1,6 +1,10 @@
 import {
-  game, getRandomNumber, minOne, maxNumber, attempts,
+  play, attempts,
 } from '../index.js';
+
+import {
+  getRandomNumber, minOne, maxNumber,
+} from '../util.js';
 
 const condition = 'Find the greatest common divisor of given numbers.';
 
@@ -10,7 +14,7 @@ const findGcd = (a, b) => {
   return findGcd(b, a % b);
 };
 
-const gameRule = () => {
+const setRulesOfGame = () => {
   const rule = [];
   for (let i = 0; i < attempts; i += 1) {
     const a = getRandomNumber(minOne, maxNumber);
@@ -22,8 +26,6 @@ const gameRule = () => {
   return rule;
 };
 
-const gcd = () => {
-  game(condition, gameRule());
+export default () => {
+  play(condition, setRulesOfGame());
 };
-
-export default gcd;

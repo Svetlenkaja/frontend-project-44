@@ -1,6 +1,10 @@
 import {
-  game, getRandomNumber, minZero, maxNumber, attempts,
+  play, attempts,
 } from '../index.js';
+
+import {
+  getRandomNumber, minZero, maxNumber,
+} from '../util.js';
 
 const condition = 'What is the result of the expression?';
 
@@ -19,7 +23,7 @@ const calculate = (num1, num2, oper) => {
   }
 };
 
-const gameRule = () => {
+const setRulesOfGame = () => {
   const rule = [];
   for (let i = 0; i < attempts; i += 1) {
     const numberOne = getRandomNumber(minZero, maxNumber);
@@ -32,8 +36,7 @@ const gameRule = () => {
   return rule;
 };
 
-const calc = () => {
-  game(condition, gameRule());
+export default () => {
+  play(condition, setRulesOfGame());
 };
 
-export default calc;

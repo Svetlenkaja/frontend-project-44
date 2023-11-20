@@ -1,23 +1,25 @@
 import {
-  game, getRandomNumber, minOne, maxNumber, attempts,
+  play, attempts,
 } from '../index.js';
+
+import {
+  getRandomNumber, minOne, maxNumber,
+} from '../util.js';
 
 const condition = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = (num) => num % 2 === 0;
 
-const gameRule = () => {
+const setRulesOfGame = () => {
   const rule = [];
   for (let i = 0; i < attempts; i += 1) {
     const question = getRandomNumber(minOne, maxNumber);
-    const answer = isEven(question);
+    const answer = isEven(question)  ? 'yes' : 'no';
     rule.push([question, answer]);
   }
   return rule;
 };
 
-const even = () => {
-  game(condition, gameRule());
+export default () => {
+  play(condition, setRulesOfGame());
 };
-
-export default even;
