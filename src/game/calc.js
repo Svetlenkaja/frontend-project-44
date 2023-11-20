@@ -39,4 +39,3 @@ const setRulesOfGame = () => {
 export default () => {
   play(condition, setRulesOfGame());
 };
-

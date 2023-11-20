@@ -3,7 +3,7 @@ import {
 } from '../index.js';
 
 import {
-  getRandomNumber, minOne, maxNumber,
+  getRandomNumber, minOne, maxNumber, generateAnswer,
 } from '../util.js';
 
 const condition = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -14,7 +14,7 @@ const setRulesOfGame = () => {
   const rule = [];
   for (let i = 0; i < attempts; i += 1) {
     const question = getRandomNumber(minOne, maxNumber);
-    const answer = isEven(question)  ? 'yes' : 'no';
+    const answer = generateAnswer(isEven(question));
     rule.push([question, answer]);
   }
   return rule;

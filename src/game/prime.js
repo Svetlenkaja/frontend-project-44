@@ -3,7 +3,7 @@ import {
 } from '../index.js';
 
 import {
-  getRandomNumber, minOne, maxNumber,
+  getRandomNumber, minOne, maxNumber, generateAnswer,
 } from '../util.js';
 
 const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -13,13 +13,13 @@ const isPrime = (num) => {
     if (num % i === 0) return false;
   }
   return num !== 1;
-}
+};
 
 const setRulesOfGame = () => {
   const rule = [];
   for (let i = 0; i < attempts; i += 1) {
     const question = getRandomNumber(minOne, maxNumber);
-    const answer = isPrime(question) ? 'yes' : 'no';
+    const answer = generateAnswer(isPrime(question));
     rule.push([question, answer]);
   }
   return rule;
