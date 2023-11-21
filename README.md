@@ -17,11 +17,18 @@ Project "Mind Games" requires [Node.js](https://nodejs.org/) (Latest LTS Version
 
 ### Setup
 
-- clone repository 
+- clone the repository 
 
 ``` 
 $ git clone <url>
 ```
+
+- move to directory project 
+
+```
+$ cd frontend-project-44
+```
+
 - install the package and all its dependencies
 
 ```sh
@@ -32,6 +39,7 @@ $ make install
 ```sh
 $ npm link
 ```
+Installation demo : https://asciinema.org/a/RB8ugV9JrtOx0Of8l8w7NXwMW
 
 ### Run
 To start the game _"Is the number even?"_  use the command `brain-even`. 
@@ -39,7 +47,7 @@ To start the game _"Is the number even?"_  use the command `brain-even`.
 ```sh
 brain-even
 ```
-Demonstration project: https://asciinema.org/a/dhi6eCktNAmBnD11bWbuDrLjd
+Demonstration game: https://asciinema.org/a/dhi6eCktNAmBnD11bWbuDrLjd
 ___
 
 
@@ -48,7 +56,7 @@ To start the game _"Calculator"_  use the command `brain-calc`.
 ``` sh
 brain-calc
 ```
-Demonstration project: https://asciinema.org/a/J9CfbNtPk4CEIlEDZEi0t5fpj
+Demonstration game: https://asciinema.org/a/J9CfbNtPk4CEIlEDZEi0t5fpj
 ___
 
 To start the game _"GCD"_  use the command `brain-gcd`.
@@ -56,7 +64,7 @@ To start the game _"GCD"_  use the command `brain-gcd`.
 ``` sh
 brain-gcd
 ```
-Demonstration project: https://asciinema.org/a/xwDjstRcFVJqACcgN0bhpaTsz
+Demonstration game: https://asciinema.org/a/xwDjstRcFVJqACcgN0bhpaTsz
 ___
 
 To start the game _"Arithmetic progression"_  use the command `brain-progression`. 
@@ -64,7 +72,7 @@ To start the game _"Arithmetic progression"_  use the command `brain-progression
 ``` sh 
 brain-progression
 ```
-Demonstration project: https://asciinema.org/a/33QFqL5wou6ljrK3nmhY9rxvy
+Demonstration game: https://asciinema.org/a/33QFqL5wou6ljrK3nmhY9rxvy
 ___
 
 
@@ -74,7 +82,7 @@ To start the game _"Is the number prime?"_  use the command `brain-prime`.
 brain-prime
 ```
 
-Demonstration project:  https://asciinema.org/a/aERVjlV5SCD2Hbw2BzRo94rjx
+Demonstration game:  https://asciinema.org/a/aERVjlV5SCD2Hbw2BzRo94rjx
 ___
 
 ### Лицензия
