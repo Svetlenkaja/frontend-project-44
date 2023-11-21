@@ -1,8 +1,6 @@
-## Project "Mind Games"
+## Study project "Mind Games"
 
-[![Actions Status](https://github.com/Svetlenkaja/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Svetlenkaja/frontend-project-44/actions)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/02fff497071c52e4e9bc/maintainability)](https://codeclimate.com/github/Svetlenkaja/frontend-project-44/maintainability)
+[![Actions Status](https://github.com/Svetlenkaja/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Svetlenkaja/frontend-project-44/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/02fff497071c52e4e9bc/maintainability)](https://codeclimate.com/github/Svetlenkaja/frontend-project-44/maintainability)
 
 
 ### Project includes five games
@@ -13,15 +11,26 @@
 - "Is the number prime?"
 
 
-### Minimum requirements:
+### Minimum requirements
 
-Project "Mind Games" requires [Node.js](https://nodejs.org/) to run.
+Project "Mind Games" requires [Node.js](https://nodejs.org/) (Latest LTS Version: 20.9.0 (includes npm 10.1.0))
 
-### Setup 
+### Setup
+
+- clone repository 
+
+``` 
+$ git clone <url>
+```
+- install the package and all its dependencies
 
 ```sh
-make install
-npm link
+$ make install
+```
+- create symlink the package folder
+
+```sh
+$ npm link
 ```
 
 ### Run
