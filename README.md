@@ -1,56 +1,73 @@
-## Проект "Игры разума"
+## Project "Mind Games"
 
 [![Actions Status](https://github.com/Svetlenkaja/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Svetlenkaja/frontend-project-44/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/02fff497071c52e4e9bc/maintainability)](https://codeclimate.com/github/Svetlenkaja/frontend-project-44/maintainability)
 
 
-### Проект включает 5 игр
-- "Проверка на чётность"
-- "Калькулятор"
-- "НОД"
-- "Арифметическая прогрессия"
-- "Простое ли число?"
+### Project includes five games
+- "Is the number even?"
+- "Calculator"
+- "GCD"
+- "Arithmetic progression"
+- "Is the number prime?"
 
 
-### Установка и запуск
-Минимальные требования:
-Для запуска игр требуется установленный [Node.js](https://nodejs.org/).
+### Minimum requirements:
 
-Для установки игр запустите следующую команду из корневой директории проекта:
-``` sh
+Project "Mind Games" requires [Node.js](https://nodejs.org/) to run.
+
+### Setup 
+
+```sh
+make install
 npm link
 ```
 
-Для запуска игры _"Проверка на четность"_ используйте команду `brain-even`. Демонстрационный проект: https://asciinema.org/a/dhi6eCktNAmBnD11bWbuDrLjd
+### Run
+To start the game _"Is the number even?"_  use the command `brain-even`. 
 
 ```sh
 brain-even
 ```
+Demonstration project: https://asciinema.org/a/dhi6eCktNAmBnD11bWbuDrLjd
+___
 
-Для запуска игры _"НОД"_ используйте команду `brain-calc`. Демонстрационный проект: https://asciinema.org/a/J9CfbNtPk4CEIlEDZEi0t5fpj
+
+To start the game _"Calculator"_  use the command `brain-calc`. 
 
 ``` sh
 brain-calc
 ```
+Demonstration project: https://asciinema.org/a/J9CfbNtPk4CEIlEDZEi0t5fpj
+___
 
-Для запуска игры _"Калькулятор"_ используйте команду `brain-gcd`. Демонстрационный проект: https://asciinema.org/a/xwDjstRcFVJqACcgN0bhpaTsz
+To start the game _"GCD"_  use the command `brain-gcd`.
 
 ``` sh
 brain-gcd
 ```
+Demonstration project: https://asciinema.org/a/xwDjstRcFVJqACcgN0bhpaTsz
+___
 
-Для запуска игры _"Арифметическая прогрессия"_ используйте команду  `brain-progression`. Демонстрационный проект: https://asciinema.org/a/33QFqL5wou6ljrK3nmhY9rxvy
+To start the game _"Arithmetic progression"_  use the command `brain-progression`. 
 
 ``` sh 
 brain-progression
 ```
+Demonstration project: https://asciinema.org/a/33QFqL5wou6ljrK3nmhY9rxvy
+___
 
-Для запуска игры _"Простое ли число?"_ используйте команду `brain-prime`. Демонстрационный проект:  https://asciinema.org/a/aERVjlV5SCD2Hbw2BzRo94rjx
+
+To start the game _"Is the number prime?"_  use the command `brain-prime`. 
 
 ``` sh
 brain-prime
 ```
+
+Demonstration project:  https://asciinema.org/a/aERVjlV5SCD2Hbw2BzRo94rjx
+___
+
 ### Лицензия
 
 ISC
